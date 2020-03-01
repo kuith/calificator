@@ -5,10 +5,24 @@ export const alumnos = [
     apellidos: "Ramirez Perez",
     grupoId: 0,
     grupo: "Primero A",
-    nota_parcial_1: 6,
-    nota_parcial_2: 7,
-    nota_parcial_3: 5,
-    nota_parcial_4: 8
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 7
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 8
+      }
+    ]
   },
   {
     id: 1,
@@ -16,10 +30,24 @@ export const alumnos = [
     apellidos: "Santamaría Carmona",
     grupoId: 0,
     grupo: "Primero A",
-    nota_parcial_1: 4,
-    nota_parcial_2: 8,
-    nota_parcial_3: 6,
-    nota_parcial_4: 7
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 4
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 9
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 3
+      }
+    ]
   },
   {
     id: 2,
@@ -27,10 +55,24 @@ export const alumnos = [
     apellidos: "Gomez Carmona",
     grupoId: 0,
     grupo: "Primero A",
-    nota_parcial_1: 4,
-    nota_parcial_2: 8,
-    nota_parcial_3: 6,
-    nota_parcial_4: 7
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 3
+      }
+    ]
   },
   {
     id: 3,
@@ -38,10 +80,24 @@ export const alumnos = [
     apellidos: "Cabrera Ramirez",
     grupoId: 0,
     grupo: "Primero A",
-    nota_parcial_1: 4,
-    nota_parcial_2: 3,
-    nota_parcial_3: 5,
-    nota_parcial_4: 5
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 8
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 7
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 7
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 8
+      }
+    ]
   },
   {
     id: 4,
@@ -49,10 +105,24 @@ export const alumnos = [
     apellidos: "Sota Reay",
     grupoId: 1,
     grupo: "Primero B",
-    nota_parcial_1: 6,
-    nota_parcial_2: 7,
-    nota_parcial_3: 5,
-    nota_parcial_4: 8
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 3
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 5
+      }
+    ]
   },
   {
     id: 5,
@@ -60,10 +130,24 @@ export const alumnos = [
     apellidos: "Santamaría Loreto",
     grupoId: 1,
     grupo: "Primero B",
-    nota_parcial_1: 4,
-    nota_parcial_2: 8,
-    nota_parcial_3: 6,
-    nota_parcial_4: 7
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 5
+      }
+    ]
   },
   {
     id: 6,
@@ -71,10 +155,24 @@ export const alumnos = [
     apellidos: "Trece Catorce",
     grupoId: 1,
     grupo: "Primero B",
-    nota_parcial_1: 4,
-    nota_parcial_2: 8,
-    nota_parcial_3: 6,
-    nota_parcial_4: 7
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 4
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 3
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 2
+      }
+    ]
   },
   {
     id: 7,
@@ -82,10 +180,24 @@ export const alumnos = [
     apellidos: "Sabado Domingo",
     grupoId: 1,
     grupo: "Primero B",
-    nota_parcial_1: 4,
-    nota_parcial_2: 3,
-    nota_parcial_3: 5,
-    nota_parcial_4: 5
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 7
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 8
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 8
+      }
+    ]
   },
   {
     id: 8,
@@ -93,10 +205,24 @@ export const alumnos = [
     apellidos: "Zamora Galicia",
     grupoId: 2,
     grupo: "Segundo A",
-    nota_parcial_1: 6,
-    nota_parcial_2: 7,
-    nota_parcial_3: 5,
-    nota_parcial_4: 8
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 9
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 9
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 10
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 8
+      }
+    ]
   },
   {
     id: 9,
@@ -104,10 +230,24 @@ export const alumnos = [
     apellidos: "Nogareda Cabrera",
     grupoId: 2,
     grupo: "Segundo A",
-    nota_parcial_1: 4,
-    nota_parcial_2: 8,
-    nota_parcial_3: 6,
-    nota_parcial_4: 7
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 7
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 8
+      }
+    ]
   },
   {
     id: 11,
@@ -115,10 +255,24 @@ export const alumnos = [
     apellidos: "Getafe Parla",
     grupoId: 2,
     grupo: "Segundo A",
-    nota_parcial_1: 4,
-    nota_parcial_2: 8,
-    nota_parcial_3: 6,
-    nota_parcial_4: 7
+    parciales: [
+      {
+        nombre: "Parcial 1",
+        nota: 6
+      },
+      {
+        nombre: "Parcial 2",
+        nota: 2
+      },
+      {
+        nombre: "Parcial 3",
+        nota: 5
+      },
+      {
+        nombre: "Parcial 4",
+        nota: 3
+      }
+    ]
   }
 ]
 export const grupos = [
@@ -127,23 +281,27 @@ export const grupos = [
     nombre: "primero A",
     curso: "Primero",
     plan: "Plan Primero",
+    planId: 0
   },
   {
     id: 1,
     nombre: "primero B",
     curso: "Primero",
     plan: "Plan Primero",
+    planId: 0
   },
   {
     id: 2,
     nombre: "Segundo A",
     curso: "Segundo",
     plan: "Plan Segundo",
+    planId: 1
   },
   {
     id: 3,
     nombre: "Segundo B",
-    curso: "Segundo"
+    curso: "Segundo",
+    planId: 1
   }
 ];
 
@@ -154,22 +312,22 @@ export const planes = [
     parciales: [
       {
         id: 0,
-        nombreParcial: "parcial primero 1",
+        nombreParcial: "primero p1",
         pesoParcial: 15
       },
       {
         id: 1,
-        nombreParcial: "parcial primero 2",
+        nombreParcial: "primero p2",
         pesoParcial: 15
       },
       {
         id: 2,
-        nombreParcial: "parcial primero 3",
+        nombreParcial: "primero p3",
         pesoParcial: 15
       },
       {
         id: 3,
-        nombreParcial: "parcial primero 4",
+        nombreParcial: "primero p4",
         pesoParcial: 15
       }
     ]
@@ -180,22 +338,22 @@ export const planes = [
     parciales: [
       {
         id: 0,
-        nombreParcial: "parcial segundo 1",
+        nombreParcial: "segundo p1",
         pesoParcial: 15
       },
       {
         id: 1,
-        nombreParcial: "parcial segundo 2",
+        nombreParcial: "segundo p2",
         pesoParcial: 15
       },
       {
         id: 2,
-        nombreParcial: "parcial segundo 3",
+        nombreParcial: "segundo p3",
         pesoParcial: 15
       },
       {
         id: 3,
-        nombreParcial: "parcial segundo 4",
+        nombreParcial: "segundo p4",
         pesoParcial: 15
       }
     ]
