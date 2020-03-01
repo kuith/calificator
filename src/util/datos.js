@@ -1,87 +1,144 @@
+export const alumnos = [
+  {
+    id: 0,
+    nombre: "Carlos",
+    apellidos: "Ramirez Perez",
+    grupoId: 0,
+    grupo: "Primero A",
+    nota_parcial_1: 6,
+    nota_parcial_2: 7,
+    nota_parcial_3: 5,
+    nota_parcial_4: 8
+  },
+  {
+    id: 1,
+    nombre: "Rafael",
+    apellidos: "Santamaría Carmona",
+    grupoId: 0,
+    grupo: "Primero A",
+    nota_parcial_1: 4,
+    nota_parcial_2: 8,
+    nota_parcial_3: 6,
+    nota_parcial_4: 7
+  },
+  {
+    id: 2,
+    nombre: "Irene",
+    apellidos: "Gomez Carmona",
+    grupoId: 0,
+    grupo: "Primero A",
+    nota_parcial_1: 4,
+    nota_parcial_2: 8,
+    nota_parcial_3: 6,
+    nota_parcial_4: 7
+  },
+  {
+    id: 3,
+    nombre: "Paula",
+    apellidos: "Cabrera Ramirez",
+    grupoId: 0,
+    grupo: "Primero A",
+    nota_parcial_1: 4,
+    nota_parcial_2: 3,
+    nota_parcial_3: 5,
+    nota_parcial_4: 5
+  },
+  {
+    id: 4,
+    nombre: "Luis",
+    apellidos: "Sota Reay",
+    grupoId: 1,
+    grupo: "Primero B",
+    nota_parcial_1: 6,
+    nota_parcial_2: 7,
+    nota_parcial_3: 5,
+    nota_parcial_4: 8
+  },
+  {
+    id: 5,
+    nombre: "Jaime",
+    apellidos: "Santamaría Loreto",
+    grupoId: 1,
+    grupo: "Primero B",
+    nota_parcial_1: 4,
+    nota_parcial_2: 8,
+    nota_parcial_3: 6,
+    nota_parcial_4: 7
+  },
+  {
+    id: 6,
+    nombre: "Lucía",
+    apellidos: "Trece Catorce",
+    grupoId: 1,
+    grupo: "Primero B",
+    nota_parcial_1: 4,
+    nota_parcial_2: 8,
+    nota_parcial_3: 6,
+    nota_parcial_4: 7
+  },
+  {
+    id: 7,
+    nombre: "Miguel",
+    apellidos: "Sabado Domingo",
+    grupoId: 1,
+    grupo: "Primero B",
+    nota_parcial_1: 4,
+    nota_parcial_2: 3,
+    nota_parcial_3: 5,
+    nota_parcial_4: 5
+  },
+  {
+    id: 8,
+    nombre: "Felipe",
+    apellidos: "Zamora Galicia",
+    grupoId: 2,
+    grupo: "Segundo A",
+    nota_parcial_1: 6,
+    nota_parcial_2: 7,
+    nota_parcial_3: 5,
+    nota_parcial_4: 8
+  },
+  {
+    id: 9,
+    nombre: "Federico",
+    apellidos: "Nogareda Cabrera",
+    grupoId: 2,
+    grupo: "Segundo A",
+    nota_parcial_1: 4,
+    nota_parcial_2: 8,
+    nota_parcial_3: 6,
+    nota_parcial_4: 7
+  },
+  {
+    id: 11,
+    nombre: "Antonio",
+    apellidos: "Getafe Parla",
+    grupoId: 2,
+    grupo: "Segundo A",
+    nota_parcial_1: 4,
+    nota_parcial_2: 8,
+    nota_parcial_3: 6,
+    nota_parcial_4: 7
+  }
+]
 export const grupos = [
   {
     id: 0,
     nombre: "primero A",
     curso: "Primero",
     plan: "Plan Primero",
-    alumnos: [
-      {
-        id: 0,
-        nombre: "Carlos",
-        Apellidos: "Ramirez Perez"
-      },
-      {
-        id: 1,
-        nombre: "Rafael",
-        Apellidos: "Santamaría Carmona"
-      },
-      {
-        id: 2,
-        nombre: "Irene",
-        Apellidos: "Gomez Carmona"
-      },
-      {
-        id: 3,
-        nombre: "Paula",
-        Apellidos: "Cabrera Ramirez"
-      }
-    ]
   },
   {
     id: 1,
     nombre: "primero B",
     curso: "Primero",
     plan: "Plan Primero",
-    alumnos: [
-      {
-        id: 0,
-        nombre: "Fernando",
-        Apellidos: "Aranda Galindez"
-      },
-      {
-        id: 1,
-        nombre: "Miguel",
-        Apellidos: "Santamaría Nogareda"
-      },
-      {
-        id: 2,
-        nombre: "Ana",
-        Apellidos: "Gomez Nuñez"
-      },
-      {
-        id: 3,
-        nombre: "Luis",
-        Apellidos: "Cedron Uribe"
-      }
-    ]
   },
   {
     id: 2,
     nombre: "Segundo A",
     curso: "Segundo",
     plan: "Plan Segundo",
-    alumnos: [
-      {
-        id: 0,
-        nombre: "Pedro",
-        Apellidos: "Perico Fernandez"
-      },
-      {
-        id: 1,
-        nombre: "Isabel",
-        Apellidos: "Soria Sevilla"
-      },
-      {
-        id: 2,
-        nombre: "Antonio",
-        Apellidos: "Leon Coruña"
-      },
-      {
-        id: 3,
-        nombre: "Luis",
-        Apellidos: "Malaga Jaen"
-      }
-    ]
   },
   {
     id: 3,
