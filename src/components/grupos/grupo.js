@@ -15,12 +15,12 @@ function Grupo(props) {
 
   const alunosNotas = alu.map(alumno => (
     <tr>
-      <th scope="row">{alumno.id}</th>
       <td>{alumno.nombre}</td>
       <td>{alumno.apellidos}</td>
       {alumno.parciales.map(par => (
         <td>{par.nota}</td>
       ))}
+      <td>{alumno.notaFinal}</td>
     </tr>
   ));
 
@@ -35,7 +35,6 @@ function Grupo(props) {
         < div className = "table-responsive">
           <table className = "table table-striped">
             <thead>
-              <th scope="col" > # </th>
               <th scope="col" > Nombre </th>
               <th scope = "col" > Apellidos</th>
               {nomPar}

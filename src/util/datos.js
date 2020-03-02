@@ -22,7 +22,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 8
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 1,
@@ -47,7 +48,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 3
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 2,
@@ -72,7 +74,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 3
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 3,
@@ -97,7 +100,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 8
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 4,
@@ -122,7 +126,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 5
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 5,
@@ -147,7 +152,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 5
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 6,
@@ -172,7 +178,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 2
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 7,
@@ -197,7 +204,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 8
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 8,
@@ -222,7 +230,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 8
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 9,
@@ -247,7 +256,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 8
       }
-    ]
+    ],
+    notaFinal: 0
   },
   {
     id: 11,
@@ -272,7 +282,8 @@ export const alumnos = [
         nombre: "Parcial 4",
         nota: 3
       }
-    ]
+    ],
+    notaFinal: 0
   }
 ]
 export const grupos = [
