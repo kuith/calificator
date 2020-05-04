@@ -5,7 +5,9 @@ import Intro from "./intro";
 import Plan from "./planes/plan";
 import Grupo from "./grupos/grupo";
 import NuevoParcial from "./planes/nuevoParcial";
-import NuevoPlan from "./planes/nuevoPlan";
+//import NuevoPlan from "./planes/nuevoPlan";
+import NuevoGrupo from "./grupos/nuevoGrupo";
+import "./estilos.css";
 
 const App = () => {
   return (
@@ -23,7 +25,7 @@ const App = () => {
             path="/parciales/nuevoParcial"
             component={NuevoParcial}
           />
-          <Route exact path="/nuevoPlan" component={NuevoPlan} />
+          <Route exact path="/grupos/nuevoGrupo" component={NuevoGrupo} />
           <Route
             path="/grupos/:grupoId"
             render={({ match }) => <Grupo id={match.params.grupoId} />}

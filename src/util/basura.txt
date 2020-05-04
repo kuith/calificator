@@ -1,0 +1,174 @@
+************************** OLD GRUPOS ******************************
+
+import React, { useState, useEffect } from "react";
+import { grupos, alumnos, planes } from "../../util/datos";
+
+function Grupo(props) {
+  const gru = grupos[props.id];
+  const plan = planes[gru.planId];
+
+  const alu = alumnos.filter(function (alumno) {
+    return alumno.grupoId == props.id;
+  });
+
+  const nomPar = plan.parciales.map(nom => (
+    <th>{nom.nombreParcial} {nom.pesoParcial}%</th>
+  ));
+
+  const alunosNotas = alu.map(alumno => (
+    <tr>
+      <td>{alumno.nombre}</td>
+      <td>{alumno.apellidos}</td>
+      {alumno.parciales.map(par => (
+        <td>{par.nota}</td>
+      ))}
+      <td>{alumno.notaFinal}</td>
+    </tr>
+  ));
+
+  return (
+    <div className="container text-center">
+      <div className="row mt-2 mb-2">
+        <div class="col-9">
+          <h3>{gru.nombre}</h3>
+        </div><div class="col-3">
+          <button type="button" className="btn btn-primary">Nuevo Parcial</button>
+        </div>
+      </div>
+      < div className="row">
+        < div className = "table-responsive">
+          <table className = "table table-striped">
+            <thead>
+              <th scope = "col" > Nombre </th>
+              <th scope = "col" > Apellidos</th>
+              {nomPar}
+              <th scope = "col" > Nota final </th>
+            </thead>
+            <tbody >
+              {alunosNotas}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Grupo;
+
+************************** FIN OLD GRUPOS **************************
+
+
+************************** OLD HEADER **************************
+import React, { useState, useEffect } from "react";
+//import { planes } from "../util/datos";
+import { grupos } from "../util/newDatos";
+import { Link } from "react-router-dom";
+
+const Header = () => {
+  ////<Link to={`/users/${user.id}`}>{user.name}</Link>
+  /*   const pla = planes.map(plan => (
+      <Link to="/plan" className="dropdown-item" key={plan.nombre}>
+        {plan.nombre}
+      </Link>
+    )); */
+  
+  const [gruposData, setGruposData] = useState(grupos);
+
+  /* const pla = planes.map(plan => (
+    <Link to={`/planes/${plan.id}`} className="dropdown-item" key={plan.nombre}>
+      {plan.nombre}
+    </Link>
+  )); */
+  
+  const gru = gruposData.map(grupo => (
+    <Link
+      to={`/grupos/${grupo.idGrupo}`}
+      className="dropdown-item"
+      key={grupo.nombreGrupo}
+    >
+      {grupo.nombreGrupo} ({grupo.anioAcademico})
+    </Link>
+  ));
+
+  const navGrupos = (
+    <>
+      <li className="nav-item dropdown">
+        <Link
+          className="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Grupos
+        </Link>
+        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+          {gru}
+          <a className="dropdown-item" href="#">
+            Nuevo Grupo
+          </a>
+        </div>
+      </li>
+    </>
+  );
+
+  // const navPlanes = (
+  //   <>
+  //     <li className="nav-item dropdown">
+  //       <Link
+  //         className="nav-link dropdown-toggle"
+  //         href="#"
+  //         id="navbarDropdown"
+  //         role="button"
+  //         data-toggle="dropdown"
+  //         aria-haspopup="true"
+  //         aria-expanded="false"
+  //       >
+  //         Planes
+  //       </Link>
+  //       <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+  //         {pla}
+  //         <Link to="/nuevoPlan" className="dropdown-item">
+  //           Nuevo Plan
+  //         </Link>
+  //       </div>
+  //     </li>
+  //   </>
+  // );
+
+  return (
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <Link to="/" className="navbar-brand">
+        Calificator
+      </Link>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
+
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          {/* {navPlanes} */}
+          {navGrupos}
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Header;
+
+************************** FIN OLD HEADER **************************
+
+
+

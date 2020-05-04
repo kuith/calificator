@@ -1,47 +1,71 @@
 import React, { useState, useEffect } from "react";
-import { grupos, alumnos, planes } from "../../util/datos";
+import { grupos, alumnosGrupo1 } from "../../util/newDatos";
 
 function Grupo(props) {
-  const gru = grupos[props.id];
-  const plan = planes[gru.planId];
+  const alumnosObtenidos = alumnosGrupo1;
 
-  const alu = alumnos.filter(function (alumno) {
-    return alumno.grupoId == props.id;
-  });
+  const grupoActual = grupos[props.id - 1];
+  console.log(props.id);
+  
+  const [gru, setGru] = useState(grupoActual);
+  console.log(grupoActual);
 
-  const nomPar = plan.parciales.map(nom => (
-    <th>{nom.nombreParcial} {nom.pesoParcial}%</th>
-  ));
+  useEffect(() => {
+    setGru(grupoActual);
+  }, [grupoActual]);
 
-  const alunosNotas = alu.map(alumno => (
-    <tr>
-      <td>{alumno.nombre}</td>
-      <td>{alumno.apellidos}</td>
-      {alumno.parciales.map(par => (
-        <td>{par.nota}</td>
-      ))}
-      <td>{alumno.notaFinal}</td>
+ /*  const alu = alumnos.filter(function (alumno) {
+    return alumno.idGrupo == props.id;
+  }); */
+
+  const cabeceraTablaAlumnos = (
+    <>
+      <th scope="col" > Nombre </th>
+      <th scope="col" > Apellidosprueba</th>
+    </>
+  );
+
+  const cabeceraTablaParciales = (
+      <td>Parcial1</td>
+  );
+
+  const cabeceraTablaNotaFinal = (
+    <td>Nota Final</td>
+  )
+  
+  
+  const al = alumnosObtenidos.map(alumno => (
+    <tr key={alumno.idAlumno}>
+      <td key={alumno.idAlumno + alumno.nombreAlumno}>{alumno.nombreAlumno}</td>
+      <td key={alumno.idAlumno + alumno.apellidosAlumno}>{alumno.apellidosAlumno}</td>
+      <td>Nota par1</td>
+      <td>Nota Nota Final</td>
     </tr>
   ));
+
+
 
   return (
     <div className="container text-center">
       <div className="row mt-2 mb-2">
-        <div class="col-sm">
-          <h3>{gru.nombre}</h3>
+        <div className="col-9">
+          <h6>Nombre del grupo: {gru.nombreGrupo} - Trimestre: dddd - Año académico: {gru.anioAcademico}</h6>
+        </div><div className="col-3">
+          <button type="button" className="btn btn-primary">Nuevo Parcial</button>
         </div>
       </div>
       < div className="row">
         < div className = "table-responsive">
           <table className = "table table-striped">
             <thead>
-              <th scope="col" > Nombre </th>
-              <th scope = "col" > Apellidos</th>
-              {nomPar}
-              <th scope = "col" > Nota final </th>
+              <tr>
+                {cabeceraTablaAlumnos}
+                {cabeceraTablaParciales}
+                {cabeceraTablaNotaFinal}
+              </tr>
             </thead>
             <tbody >
-              {alunosNotas}
+              {al}
             </tbody>
           </table>
         </div>

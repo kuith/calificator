@@ -1,27 +1,19 @@
-import React from "react";
-import { planes, grupos, cursos } from "../util/datos";
+import React, { useState } from "react";
+//import { planes } from "../util/datos";
+import { grupos } from "../util/newDatos";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  ////<Link to={`/users/${user.id}`}>{user.name}</Link>
-  /*   const pla = planes.map(plan => (
-      <Link to="/plan" className="dropdown-item" key={plan.nombre}>
-        {plan.nombre}
-      </Link>
-    )); */
-  const pla = planes.map(plan => (
-    <Link to={`/planes/${plan.id}`} className="dropdown-item" key={plan.nombre}>
-      {plan.nombre}
-    </Link>
-  ));
-
-  const gru = grupos.map(grupo => (
+  
+  const [gruposData, setGruposData] = useState(grupos);
+  
+  const gru = gruposData.map(grupo => (
     <Link
-      to={`/grupos/${grupo.id}`}
+      to={`/grupos/${grupo.idGrupo}`}
       className="dropdown-item"
-      key={grupo.nombre}
+      key={grupo.nombreGrupo}
     >
-      {grupo.nombre}
+      {grupo.nombreGrupo} ({grupo.anioAcademico})
     </Link>
   ));
 
@@ -41,32 +33,8 @@ const Header = () => {
         </Link>
         <div className="dropdown-menu" aria-labelledby="navbarDropdown">
           {gru}
-          <a className="dropdown-item" href="#">
+          <Link to="/grupos/nuevoGrupo" className="dropdown-item">
             Nuevo Grupo
-          </a>
-        </div>
-      </li>
-    </>
-  );
-
-  const navPlanes = (
-    <>
-      <li className="nav-item dropdown">
-        <Link
-          className="nav-link dropdown-toggle"
-          href="#"
-          id="navbarDropdown"
-          role="button"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
-          Planes
-        </Link>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-          {pla}
-          <Link to="/nuevoPlan" className="dropdown-item">
-            Nuevo Plan
           </Link>
         </div>
       </li>
@@ -92,7 +60,6 @@ const Header = () => {
 
       <div className="collapse navbar-collapse" id="navbarSupportedContent">
         <ul className="navbar-nav mr-auto">
-          {navPlanes}
           {navGrupos}
         </ul>
       </div>
