@@ -221,16 +221,6 @@ export const parciales = [
   },
   {
     idParcial: 2,
-    nombreParcial: "Parcial 3",
-    pesoParcial: 25
-  },
-  {
-    idParcial: 3,
-    nombreParcial: "Parcial 4",
-    pesoParcial: 30
-  },
-  {
-    idParcial: 4,
     nombreParcial: "Parcial 5",
     pesoParcial: 50
   },
@@ -577,5 +567,161 @@ export const alumnosGRupo2 = [
     curso: "Primero",
     anioAcademico: "2020-2021",
     nombreGrupo: "Primero B"
+  }
+]
+
+export const realizaAlumno1Trimestre1 = [
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 0,
+    idTrimestre: 0,
+    nota: 8
+  },
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 1,
+    idTrimestre: 0,
+    nota: 4
+  },
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 2,
+    idTrimestre: 0,
+    nota: 6
+  },
+]
+
+export const realizaAlumno2Trimestre1 = [
+  {
+    idAlumno: 1,
+    nombreAlumno: "Ana",
+    apellidosAlumno: "De-las-tejas Verdes",
+    idParcial: 0,
+    idTrimestre: 0,
+    nota: 6
+  },
+  {
+    idAlumno: 1,
+    nombreAlumno: "Ana",
+    apellidosAlumno: "De-las-tejas Verdes",
+    idParcial: 1,
+    idTrimestre: 0,
+    nota: 5
+  },
+  {
+    idAlumno: 1,
+    nombreAlumno: "Ana",
+    apellidosAlumno: "De-las-tejas Verdes",
+    idParcial: 2,
+    idTrimestre: 0,
+    nota: 8
+  }
+]
+
+export const realizaAlumno3Trimestre1 = [
+  {
+    idAlumno: 2,
+    nombreAlumno: "Luisa",
+    apellidosAlumno: "Fernanda Manuela",
+    idParcial: 0,
+    idTrimestre: 0,
+    nota: 9
+  },
+  {
+    idAlumno: 2,
+    nombreAlumno: "Luisa",
+    apellidosAlumno: "Fernanda Manuela",
+    idParcial: 1,
+    idTrimestre: 0,
+    nota: 6
+  },
+  {
+    idAlumno: 2,
+    nombreAlumno: "Luisa",
+    apellidosAlumno: "Fernanda Manuela",
+    idParcial: 2,
+    idTrimestre: 0,
+    nota: 8
+  }
+]
+
+export const realizaAlumnosGrupo0Trimestre1 = [
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 0,
+    idTrimestre: 0,
+    nota: 8
+  },
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 1,
+    idTrimestre: 0,
+    nota: 4
+  },
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 2,
+    idTrimestre: 0,
+    nota: 6
+  },
+  {
+    idAlumno: 1,
+    nombreAlumno: "Ana",
+    apellidosAlumno: "De-las-tejas Verdes",
+    idParcial: 0,
+    idTrimestre: 0,
+    nota: 6
+  },
+  {
+    idAlumno: 1,
+    nombreAlumno: "Ana",
+    apellidosAlumno: "De-las-tejas Verdes",
+    idParcial: 1,
+    idTrimestre: 0,
+    nota: 5
+  },
+  {
+    idAlumno: 1,
+    nombreAlumno: "Ana",
+    apellidosAlumno: "De-las-tejas Verdes",
+    idParcial: 2,
+    idTrimestre: 0,
+    nota: 8
+  },
+  {
+    idAlumno: 2,
+    nombreAlumno: "Luisa",
+    apellidosAlumno: "Fernanda Manuela",
+    idParcial: 0,
+    idTrimestre: 0,
+    nota: 9
+  },
+  {
+    idAlumno: 2,
+    nombreAlumno: "Luisa",
+    apellidosAlumno: "Fernanda Manuela",
+    idParcial: 1,
+    idTrimestre: 0,
+    nota: 6
+  },
+  {
+    idAlumno: 2,
+    nombreAlumno: "Luisa",
+    apellidosAlumno: "Fernanda Manuela",
+    idParcial: 2,
+    idTrimestre: 0,
+    nota: 8
   }
 ]

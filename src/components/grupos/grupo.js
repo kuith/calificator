@@ -1,8 +1,13 @@
 import React, { useState, useEffect } from "react";
-import { grupos, alumnosGrupo1 } from "../../util/newDatos";
+import { grupos, alumnosGrupo1, realizaAlumnosGrupo0Trimestre1 } from "../../util/newDatos";
 
 function Grupo(props) {
   const alumnosObtenidos = alumnosGrupo1;
+  const realiza = [];
+  
+  /////Para pruebas
+  const realizaGrupo1 = realizaAlumnosGrupo0Trimestre1;
+  /////
 
   const grupoActual = grupos[props.id - 1];
   console.log(props.id);
@@ -33,13 +38,19 @@ function Grupo(props) {
     <td>Nota Final</td>
   )
   
-  
   const al = alumnosObtenidos.map(alumno => (
     <tr key={alumno.idAlumno}>
       <td key={alumno.idAlumno + alumno.nombreAlumno}>{alumno.nombreAlumno}</td>
       <td key={alumno.idAlumno + alumno.apellidosAlumno}>{alumno.apellidosAlumno}</td>
       <td>Nota par1</td>
       <td>Nota Nota Final</td>
+    </tr>
+  ));
+
+  const alumnos = realizaGrupo1.filter(alumn=>alumn.nombreAlumno == "Felipe").map(al => (
+    <tr key={al.idAlumno}>
+      <td key={al.idAlumno + al.nombreAlumno}>{al.nombreAlumno}</td>
+      <td key={al.idAlumno + al.apellidosAlumno}>{al.apellidosAlumno}</td>
     </tr>
   ));
 
@@ -65,7 +76,8 @@ function Grupo(props) {
               </tr>
             </thead>
             <tbody >
-              {al}
+              {alumnos}
+              {/* {al} */}
             </tbody>
           </table>
         </div>
