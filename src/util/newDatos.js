@@ -3,38 +3,38 @@ export const grupos = [
     idGrupo: 1,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero A"
+    nombreGrupo: "Primero A",
   },
   {
     idGrupo: 2,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero B"
+    nombreGrupo: "Primero B",
   },
   {
     idGrupo: 3,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo A"
+    nombreGrupo: "Segundo A",
   },
   {
     idGrupo: 4,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo B"
+    nombreGrupo: "Segundo B",
   },
   {
     idGrupo: 5,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero A"
+    nombreGrupo: "Tercero A",
   },
   {
     idGrupo: 6,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero B"
-  }
+    nombreGrupo: "Tercero B",
+  },
 ];
 
 export const alumnos = [
@@ -45,7 +45,7 @@ export const alumnos = [
     idGrupo: 1,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero A"
+    nombreGrupo: "Primero A",
   },
   {
     idAlumno: 2,
@@ -54,7 +54,7 @@ export const alumnos = [
     idGrupo: 1,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero A"
+    nombreGrupo: "Primero A",
   },
   {
     idAlumno: 3,
@@ -63,7 +63,7 @@ export const alumnos = [
     idGrupo: 1,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero A"
+    nombreGrupo: "Primero A",
   },
   {
     idAlumno: 4,
@@ -72,7 +72,7 @@ export const alumnos = [
     idGrupo: 2,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero B"
+    nombreGrupo: "Primero B",
   },
   {
     idAlumno: 5,
@@ -81,7 +81,7 @@ export const alumnos = [
     idGrupo: 2,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero B"
+    nombreGrupo: "Primero B",
   },
   {
     idAlumno: 6,
@@ -90,7 +90,7 @@ export const alumnos = [
     idGrupo: 3,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo A"
+    nombreGrupo: "Segundo A",
   },
   {
     idAlumno: 7,
@@ -99,7 +99,7 @@ export const alumnos = [
     idGrupo: 3,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo A"
+    nombreGrupo: "Segundo A",
   },
   {
     idAlumno: 8,
@@ -108,7 +108,7 @@ export const alumnos = [
     idGrupo: 3,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo A"
+    nombreGrupo: "Segundo A",
   },
   {
     idAlumno: 9,
@@ -117,7 +117,7 @@ export const alumnos = [
     idGrupo: 4,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo B"
+    nombreGrupo: "Segundo B",
   },
   {
     idAlumno: 10,
@@ -126,7 +126,7 @@ export const alumnos = [
     idGrupo: 4,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo B"
+    nombreGrupo: "Segundo B",
   },
   {
     idAlumno: 11,
@@ -135,7 +135,7 @@ export const alumnos = [
     idGrupo: 4,
     curso: "Segundo",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Segundo B"
+    nombreGrupo: "Segundo B",
   },
   {
     idAlumno: 12,
@@ -144,7 +144,7 @@ export const alumnos = [
     idGrupo: 5,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero A"
+    nombreGrupo: "Tercero A",
   },
   {
     idAlumno: 13,
@@ -153,7 +153,7 @@ export const alumnos = [
     idGrupo: 5,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero A"
+    nombreGrupo: "Tercero A",
   },
   {
     idAlumno: 14,
@@ -162,7 +162,7 @@ export const alumnos = [
     idGrupo: 5,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero A"
+    nombreGrupo: "Tercero A",
   },
   {
     idAlumno: 15,
@@ -171,7 +171,7 @@ export const alumnos = [
     idGrupo: 6,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero B"
+    nombreGrupo: "Tercero B",
   },
   {
     idAlumno: 16,
@@ -180,7 +180,7 @@ export const alumnos = [
     idGrupo: 6,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero B"
+    nombreGrupo: "Tercero B",
   },
   {
     idAlumno: 17,
@@ -189,22 +189,22 @@ export const alumnos = [
     idGrupo: 6,
     curso: "Tercero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Tercero B"
+    nombreGrupo: "Tercero B",
   },
 ];
 
 export const trimestres = [
   {
     idTrimestre: 0,
-    nombreTrimestre: "Primer Trimestre"
+    nombreTrimestre: "Primer Trimestre",
   },
   {
     idTrimestre: 1,
-    nombreTrimestre: "Segundo Trimestre"
+    nombreTrimestre: "Segundo Trimestre",
   },
   {
     idTrimestre: 2,
-    nombreTrimestre: "Tercer Trimestre"
+    nombreTrimestre: "Tercer Trimestre",
   },
 ];
 
@@ -212,19 +212,19 @@ export const parciales = [
   {
     idParcial: 0,
     nombreParcial: "Parcial 1",
-    pesoParcial: 25
+    pesoParcial: 25,
   },
   {
     idParcial: 1,
     nombreParcial: "Parcial 2",
-    pesoParcial: 25
+    pesoParcial: 25,
   },
   {
     idParcial: 2,
     nombreParcial: "Parcial 5",
-    pesoParcial: 50
+    pesoParcial: 50,
   },
-]
+];
 
 export const realiza = [
   {
@@ -233,7 +233,7 @@ export const realiza = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 8
+    nota: 8,
   },
   {
     idAlumno: 1,
@@ -241,7 +241,7 @@ export const realiza = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 2,
@@ -249,7 +249,7 @@ export const realiza = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 9
+    nota: 9,
   },
   {
     idAlumno: 0,
@@ -257,7 +257,7 @@ export const realiza = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 5
+    nota: 5,
   },
   {
     idAlumno: 1,
@@ -265,7 +265,7 @@ export const realiza = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 7
+    nota: 7,
   },
   {
     idAlumno: 2,
@@ -273,7 +273,7 @@ export const realiza = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 0,
@@ -281,7 +281,7 @@ export const realiza = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 8
+    nota: 8,
   },
   {
     idAlumno: 1,
@@ -289,7 +289,7 @@ export const realiza = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 2,
@@ -297,7 +297,7 @@ export const realiza = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 9
+    nota: 9,
   },
   {
     idAlumno: 0,
@@ -305,7 +305,7 @@ export const realiza = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 4,
     idTrimestre: 0,
-    nota: 4
+    nota: 4,
   },
   {
     idAlumno: 1,
@@ -313,7 +313,7 @@ export const realiza = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 4,
     idTrimestre: 0,
-    nota: 3
+    nota: 3,
   },
   {
     idAlumno: 2,
@@ -321,7 +321,7 @@ export const realiza = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 4,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 5,
@@ -329,7 +329,7 @@ export const realiza = [
     apellidosAlumno: "Junio Maiercoles",
     idParcial: 4,
     idTrimestre: 0,
-    nota: 3
+    nota: 3,
   },
   {
     idAlumno: 6,
@@ -337,7 +337,7 @@ export const realiza = [
     apellidosAlumno: "Piedra MAroto",
     idParcial: 4,
     idTrimestre: 0,
-    nota: 3
+    nota: 3,
   },
   {
     idAlumno: 7,
@@ -345,7 +345,7 @@ export const realiza = [
     apellidosAlumno: "Alas Negras",
     idParcial: 4,
     idTrimestre: 0,
-    nota: 3
+    nota: 3,
   },
   {
     idAlumno: 5,
@@ -353,7 +353,7 @@ export const realiza = [
     apellidosAlumno: "Junio Maiercoles",
     idParcial: 0,
     idTrimestre: 0,
-    nota:10
+    nota: 10,
   },
   {
     idAlumno: 6,
@@ -361,7 +361,7 @@ export const realiza = [
     apellidosAlumno: "Piedra MAroto",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 8
+    nota: 8,
   },
   {
     idAlumno: 7,
@@ -369,7 +369,7 @@ export const realiza = [
     apellidosAlumno: "Alas Negras",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 7
+    nota: 7,
   },
   {
     idAlumno: 5,
@@ -377,7 +377,7 @@ export const realiza = [
     apellidosAlumno: "Junio Maiercoles",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 6,
@@ -385,7 +385,7 @@ export const realiza = [
     apellidosAlumno: "Piedra MAroto",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 7,
@@ -393,9 +393,9 @@ export const realiza = [
     apellidosAlumno: "Alas Negras",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 4
+    nota: 4,
   },
-]
+];
 
 export const notaFinal = [
   {
@@ -403,120 +403,120 @@ export const notaFinal = [
     nombreAlumno: "Felipe",
     apellidosAlumno: "Lunes Martes",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 1,
     nombreAlumno: "Ana",
     apellidosAlumno: "De-las-tejas Verdes",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 2,
     nombreAlumno: "Luisa",
     apellidosAlumno: "Fernanda Manuela",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 3,
     nombreAlumno: "Antonio",
     apellidosAlumno: "enero Febrero",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 4,
     nombreAlumno: "Monica",
     apellidosAlumno: "Miercoles Jueves",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 5,
     nombreAlumno: "Rafael",
     apellidosAlumno: "Junio Maiercoles",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 6,
     nombreAlumno: "Pepito",
     apellidosAlumno: "Piedra MAroto",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 7,
     nombreAlumno: "Jacinto",
     apellidosAlumno: "Alas Negras",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 8,
     nombreAlumno: "Gloria",
     apellidosAlumno: "Armas Pocas",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 9,
     nombreAlumno: "Felipe",
     apellidosAlumno: "Todos Aqui",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 10,
     nombreAlumno: "Javier",
     apellidosAlumno: "Estoy Cansado",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 11,
     nombreAlumno: "Carlos",
     apellidosAlumno: "Canarias Bonito",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 12,
     nombreAlumno: "Gema",
     apellidosAlumno: "Cuervo Volando",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 13,
     nombreAlumno: "Casemiro",
     apellidosAlumno: "Juega Madrid",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 14,
     nombreAlumno: "Macarena",
     apellidosAlumno: "Sevilla Jaen",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 15,
     nombreAlumno: "Anastasio",
     apellidosAlumno: "Nombre Raro",
     idTrimestre: 0,
-    notaFinal: 0
+    notaFinal: 0,
   },
   {
     idAlumno: 16,
     nombreAlumno: "Lucila",
     apellidosAlumno: "Mesa Silla",
     idTrimestre: 0,
-    notaFinal: 0
-  }
+    notaFinal: 0,
+  },
 ];
 
 export const alumnosGrupo1 = [
@@ -527,7 +527,7 @@ export const alumnosGrupo1 = [
     idGrupo: 1,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero A"
+    nombreGrupo: "Primero A",
   },
   {
     idAlumno: 2,
@@ -536,7 +536,7 @@ export const alumnosGrupo1 = [
     idGrupo: 1,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero A"
+    nombreGrupo: "Primero A",
   },
   {
     idAlumno: 3,
@@ -545,8 +545,8 @@ export const alumnosGrupo1 = [
     idGrupo: 1,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero A"
-  }
+    nombreGrupo: "Primero A",
+  },
 ];
 
 export const alumnosGRupo2 = [
@@ -557,7 +557,7 @@ export const alumnosGRupo2 = [
     idGrupo: 2,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero B"
+    nombreGrupo: "Primero B",
   },
   {
     idAlumno: 5,
@@ -566,9 +566,9 @@ export const alumnosGRupo2 = [
     idGrupo: 2,
     curso: "Primero",
     anioAcademico: "2020-2021",
-    nombreGrupo: "Primero B"
-  }
-]
+    nombreGrupo: "Primero B",
+  },
+];
 
 export const realizaAlumno1Trimestre1 = [
   {
@@ -577,7 +577,7 @@ export const realizaAlumno1Trimestre1 = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 8
+    nota: 8,
   },
   {
     idAlumno: 0,
@@ -585,7 +585,7 @@ export const realizaAlumno1Trimestre1 = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 4
+    nota: 4,
   },
   {
     idAlumno: 0,
@@ -593,9 +593,9 @@ export const realizaAlumno1Trimestre1 = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
-]
+];
 
 export const realizaAlumno2Trimestre1 = [
   {
@@ -604,7 +604,7 @@ export const realizaAlumno2Trimestre1 = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 1,
@@ -612,7 +612,7 @@ export const realizaAlumno2Trimestre1 = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 5
+    nota: 5,
   },
   {
     idAlumno: 1,
@@ -620,9 +620,9 @@ export const realizaAlumno2Trimestre1 = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 8
-  }
-]
+    nota: 8,
+  },
+];
 
 export const realizaAlumno3Trimestre1 = [
   {
@@ -631,7 +631,7 @@ export const realizaAlumno3Trimestre1 = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 9
+    nota: 9,
   },
   {
     idAlumno: 2,
@@ -639,7 +639,7 @@ export const realizaAlumno3Trimestre1 = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 2,
@@ -647,9 +647,9 @@ export const realizaAlumno3Trimestre1 = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 8
-  }
-]
+    nota: 8,
+  },
+];
 
 export const realizaAlumnosGrupo0Trimestre1 = [
   {
@@ -658,7 +658,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 8
+    nota: 8,
   },
   {
     idAlumno: 0,
@@ -666,7 +666,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 4
+    nota: 4,
   },
   {
     idAlumno: 0,
@@ -674,7 +674,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "Lunes Martes",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 1,
@@ -682,7 +682,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 1,
@@ -690,7 +690,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 5
+    nota: 5,
   },
   {
     idAlumno: 1,
@@ -698,7 +698,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 8
+    nota: 8,
   },
   {
     idAlumno: 2,
@@ -706,7 +706,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 0,
     idTrimestre: 0,
-    nota: 9
+    nota: 9,
   },
   {
     idAlumno: 2,
@@ -714,7 +714,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 1,
     idTrimestre: 0,
-    nota: 6
+    nota: 6,
   },
   {
     idAlumno: 2,
@@ -722,6 +722,36 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 2,
     idTrimestre: 0,
-    nota: 8
-  }
-]
+    nota: 8,
+  },
+];
+export const realizaAlumno1Grupo0Trimestre1 = [
+  //tambien pido el nobre del parcial para la cabecera
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 0,
+    nombreParcial: "Parcial 1",
+    idTrimestre: 0,
+    nota: 8,
+  },
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 1,
+    nombreParcial: "Parcial 2",
+    idTrimestre: 0,
+    nota: 4,
+  },
+  {
+    idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 2,
+    nombreParcial: "Parcial 5",
+    idTrimestre: 0,
+    nota: 6,
+  },
+];
