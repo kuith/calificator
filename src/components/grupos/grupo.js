@@ -38,46 +38,51 @@ function Grupo(props) {
   ));
   ////////////// Fin Cabeceras ///////////////////
 
-  /* const items = [{
-  id: 1,
-  category: "cat_1",
-  title: "My title 1"
-}, {
-  id: 2,
-  category: "cat_2",
-  title: "My title 2"
-}, {
-  id: 6,
-  category: "cat_1",
-  title: "Another title 1"
-}, {
-  id: 1,
-  category: "cat_3",
-  title: "My title 3"
-}, {
-  id: 8,
-  category: "cat_1",
-  title: "Third Title"
-}, {
-  id: 2,
-  category: "cat_2",
-  title: "Another title 2 "
-}];
-const cats = items.reduce((catsSoFar, { category, title }) => {
-  if (!catsSoFar[category]) catsSoFar[category] = [];
-  catsSoFar[category].push(title);
-  return catsSoFar;
-}, {});
-console.log(cats); 
+  /*
+    const persons = [
+      {
+        "age": 15,
+        "person": {
+          name: 'John',
+          hobby: 'ski'
+        },
+      },
+      {
+        "age": 23,
+        "person": {
+          name: 'Suzi',
+          hobby: 'golf'
+        }
+      ]
 
-idAlumno: 0,
-    nombreAlumno: "Felipe",
-    apellidosAlumno: "Lunes Martes",
-    idParcial: 0,
-    nombreParcial: "Parcial 1",
-    idTrimestre: 0,
-    nota: 8,*/
-  //dsdsdsdsdsd
+      function groupBy(OurArray, property) {
+        return OurArray.reduce(function (accumulator, object) {
+          // get the value of our object(age in our case) to use for group    the array as the array key
+          const key = object[property];
+          // if the current value is similar to the key(age) don't accumulate the transformed array and leave it empty
+          if (!accumulator[key]) {
+            accumulator[key] = [];
+          }
+      // add the value to the array
+          accumulator[key].push(object);
+          // return the transformed array
+        return accumulator;
+      // Also we also set the initial value of reduce() to an empty object
+        }, {});
+      }
+
+      const groupedPeople = groupBy(persons, 'age');
+      console.log(groupedPeople);
+
+
+          idAlumno: 0,
+          nombreAlumno: "Felipe",
+          apellidosAlumno: "Lunes Martes",
+          idParcial: 0,
+          nombreParcial: "Parcial 1",
+          idTrimestre: 0,
+          nota: 8,*/
+
   const alumnosGrupo = realizaGrupo1.reduce(
     (
       alumnoActual,
