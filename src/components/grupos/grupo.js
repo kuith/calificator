@@ -8,8 +8,7 @@ import {
 
 function Grupo(props) {
   const alumnosObtenidos = alumnosGrupo1;
-  const realiza = [];
-  const parcialesAlumno = [];
+  const realizadosGrupo = [];
 
   /////Para pruebas
   const realizaGrupo1 = realizaAlumnosGrupo0Trimestre1;
@@ -17,32 +16,85 @@ function Grupo(props) {
   /////
 
   const grupoActual = grupos[props.id - 1];
-  console.log(props.id);
-
   const [gru, setGru] = useState(grupoActual);
-  console.log(grupoActual);
 
   useEffect(() => {
     setGru(grupoActual);
   }, [grupoActual]);
 
+  //////////////Cabeceras///////////////////////
   const cabeceraTablaAlumnos = (
     <>
       <th scope="col"> Nombre </th>
       <th scope="col"> Apellidosprueba</th>
     </>
   );
-
-  //const cabeceraTablaParciales = <td>Parcial1</td>;
   const cabeceraTablaNotaFinal = <td>Nota Final</td>;
-
   const parcialesAlumos = realizaParcialesAlumno1.map((parcial) => (
     <td>{parcial.nota}</td>
   ));
-
   const cabeceraTablaParciales = realizaParcialesAlumno1.map((parcial) => (
     <th>{parcial.nombreParcial}</th>
   ));
+  ////////////// Fin Cabeceras ///////////////////
+
+  /* const items = [{
+  id: 1,
+  category: "cat_1",
+  title: "My title 1"
+}, {
+  id: 2,
+  category: "cat_2",
+  title: "My title 2"
+}, {
+  id: 6,
+  category: "cat_1",
+  title: "Another title 1"
+}, {
+  id: 1,
+  category: "cat_3",
+  title: "My title 3"
+}, {
+  id: 8,
+  category: "cat_1",
+  title: "Third Title"
+}, {
+  id: 2,
+  category: "cat_2",
+  title: "Another title 2 "
+}];
+const cats = items.reduce((catsSoFar, { category, title }) => {
+  if (!catsSoFar[category]) catsSoFar[category] = [];
+  catsSoFar[category].push(title);
+  return catsSoFar;
+}, {});
+console.log(cats); 
+
+idAlumno: 0,
+    nombreAlumno: "Felipe",
+    apellidosAlumno: "Lunes Martes",
+    idParcial: 0,
+    nombreParcial: "Parcial 1",
+    idTrimestre: 0,
+    nota: 8,*/
+
+  const alumnosGrupo = realizaGrupo1.reduce(
+    (
+      alumnoActual,
+      {
+        idAlumno,
+        nombreAlumno,
+        apellidosAlumno,
+        idParcial,
+        nombreParcial,
+        idTrimestre,
+        nota,
+      }
+    ) => {
+      if (!alumnoActual[nombreAlumno]) alumnoActual[nombreAlumno] = [];
+      alumnoActual[nombreAlumno].push();
+    }
+  );
 
   const al = alumnosObtenidos.map((alumno) => (
     <tr key={alumno.idAlumno}>
