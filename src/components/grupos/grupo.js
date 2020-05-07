@@ -77,7 +77,7 @@ idAlumno: 0,
     nombreParcial: "Parcial 1",
     idTrimestre: 0,
     nota: 8,*/
-
+  //dsdsdsdsdsd
   const alumnosGrupo = realizaGrupo1.reduce(
     (
       alumnoActual,
