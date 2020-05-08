@@ -38,78 +38,24 @@ function Grupo(props) {
   ));
   ////////////// Fin Cabeceras ///////////////////
 
-  /*
-    const persons = [
-      {
-        "age": 15,
-        "person": {
-          name: 'John',
-          hobby: 'ski'
-        },
-      },
-      {
-        "age": 23,
-        "person": {
-          name: 'Suzi',
-          hobby: 'golf'
-        }
-      ]
-
-      function groupBy(OurArray, property) {
-        return OurArray.reduce(function (accumulator, object) {
-          // get the value of our object(age in our case) to use for group    the array as the array key
-          const key = object[property];
-          // if the current value is similar to the key(age) don't accumulate the transformed array and leave it empty
-          if (!accumulator[key]) {
-            accumulator[key] = [];
-          }
+  function groupBy(OurArray, property) {
+    return OurArray.reduce(function (accumulator, object) {
+      // get the value of our object(age in our case) to use for group    the array as the array key
+      const key = object[property];
+      // if the current value is similar to the key(age) don't accumulate the transformed array and leave it empty
+      if (!accumulator[key]) {
+        accumulator[key] = [];
+      }
       // add the value to the array
-          accumulator[key].push(object);
-          // return the transformed array
-        return accumulator;
+      accumulator[key].push(object);
+      // return the transformed array
+      return accumulator;
       // Also we also set the initial value of reduce() to an empty object
-        }, {});
-      }
+    }, {});
+  }
 
-      const groupedPeople = groupBy(persons, 'age');
-      console.log(groupedPeople);
-
-
-          idAlumno: 0,
-          nombreAlumno: "Felipe",
-          apellidosAlumno: "Lunes Martes",
-          idParcial: 0,
-          nombreParcial: "Parcial 1",
-          idTrimestre: 0,
-          nota: 8,*/
-
-  const alumnosGrupo = realizaGrupo1.reduce(
-    (
-      alumnoActual,
-      {
-        idAlumno,
-        nombreAlumno,
-        apellidosAlumno,
-        idParcial,
-        nombreParcial,
-        idTrimestre,
-        nota,
-      }
-    ) => {
-      if (!alumnoActual[nombreAlumno]) alumnoActual[nombreAlumno] = [];
-      alumnoActual[nombreAlumno].push();
-    }
-  );
-
-  const al = alumnosObtenidos.map((alumno) => (
-    <tr key={alumno.idAlumno}>
-      <td key={alumno.idAlumno + alumno.nombreAlumno}>{alumno.nombreAlumno}</td>
-      <td key={alumno.idAlumno + alumno.apellidosAlumno}>
-        {alumno.apellidosAlumno}
-      </td>
-      {parcialesAlumos}
-    </tr>
-  ));
+  const alumnosRealizan = groupBy(realizaGrupo1, "idAlumno");
+  //console.log(alumnosRealizan);
 
   return (
     <div className="container text-center">
@@ -136,7 +82,7 @@ function Grupo(props) {
                 {cabeceraTablaNotaFinal}
               </tr>
             </thead>
-            <tbody>{al}</tbody>
+            <tbody>{}</tbody>
           </table>
         </div>
       </div>
