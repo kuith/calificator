@@ -651,12 +651,13 @@ export const realizaAlumno3Trimestre1 = [
   },
 ];
 
-export const realizaAlumnosGrupo0Trimestre1 = [
+export const realizaGrupo0Trimestre1 = [
   {
     idAlumno: 0,
     nombreAlumno: "Felipe",
     apellidosAlumno: "Lunes Martes",
     idParcial: 0,
+    nombreParcial: "Parcial 1",
     idTrimestre: 0,
     nota: 8,
   },
@@ -665,6 +666,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Felipe",
     apellidosAlumno: "Lunes Martes",
     idParcial: 1,
+    nombreParcial: "Parcial 2",
     idTrimestre: 0,
     nota: 4,
   },
@@ -673,6 +675,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Felipe",
     apellidosAlumno: "Lunes Martes",
     idParcial: 2,
+    nombreParcial: "Parcial 3",
     idTrimestre: 0,
     nota: 6,
   },
@@ -681,6 +684,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Ana",
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 0,
+    nombreParcial: "Parcial 1",
     idTrimestre: 0,
     nota: 6,
   },
@@ -689,6 +693,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Ana",
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 1,
+    nombreParcial: "Parcial 2",
     idTrimestre: 0,
     nota: 5,
   },
@@ -697,6 +702,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Ana",
     apellidosAlumno: "De-las-tejas Verdes",
     idParcial: 2,
+    nombreParcial: "Parcial 3",
     idTrimestre: 0,
     nota: 8,
   },
@@ -705,6 +711,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Luisa",
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 0,
+    nombreParcial: "Parcial 1",
     idTrimestre: 0,
     nota: 9,
   },
@@ -713,6 +720,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Luisa",
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 1,
+    nombreParcial: "Parcial 2",
     idTrimestre: 0,
     nota: 6,
   },
@@ -721,6 +729,7 @@ export const realizaAlumnosGrupo0Trimestre1 = [
     nombreAlumno: "Luisa",
     apellidosAlumno: "Fernanda Manuela",
     idParcial: 2,
+    nombreParcial: "Parcial 3",
     idTrimestre: 0,
     nota: 8,
   },
@@ -753,5 +762,20 @@ export const realizaAlumno1Grupo0Trimestre1 = [
     nombreParcial: "Parcial 5",
     idTrimestre: 0,
     nota: 6,
+  },
+];
+
+export const parcialesGrupo0Trimestre1 = [
+  {
+    idParcial: 0,
+    nombreParcial: "Parcial 1",
+  },
+  {
+    idParcial: 1,
+    nombreParcial: "Parcial 2",
+  },
+  {
+    idParcial: 2,
+    nombreParcial: "Parcial 3",
   },
 ];

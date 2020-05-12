@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Resultados por alumno</title>
+    <style>
+      div {
+        border-bottom: 1px solid gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module">
+      import { realizaAlumnosGrupo0Trimestre1 } from "./array_entrada.js";
+      import { resultadosPorAlumno } from "./resultados-por-alumno.js";
+
+      const createAlumnoHtml = (alumno) => {
+        const contenedorAlumno = document.createElement("div");
+        contenedorAlumno.appendChild(createAlumnoTitleHtml(alumno));
+        alumno.parciales.forEach((parcial) =>
+          contenedorAlumno.appendChild(createParcialHtml(parcial))
+        );
+        return contenedorAlumno;
+      };
+
+      const createAlumnoTitleHtml = ({
+        idAlumno,
+        nombreAlumno,
+        apellidosAlumno,
+      }) => {
+        const contenedorAlumnoTitle = document.createElement("h2");
+        contenedorAlumnoTitle.innerHTML = `(${idAlumno}) ${apellidosAlumno}, ${nombreAlumno}`;
+        return contenedorAlumnoTitle;
+      };
+
+      const createParcialHtml = ({ idParcial, idTrimestre, nota }) => {
+        const contenedorParcial = document.createElement("p");
+        contenedorParcial.innerHTML = `Trimestre ${idTrimestre} Parcial: ${idParcial} Nota: ${nota}`;
+        return contenedorParcial;
+      };
+
+      const resultados = resultadosPorAlumno(realizaAlumnosGrupo0Trimestre1);
+      const root = document.querySelector("#root");
+      const alumnos = resultados.map(createAlumnoHtml, []);
+      alumnos.forEach((alumno) => root.appendChild(alumno));
+    </script>
+  </body>
+</html>
