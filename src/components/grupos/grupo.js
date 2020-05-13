@@ -4,6 +4,7 @@ import {
   realizaGrupo0Trimestre1,
   parcialesGrupo0Trimestre1,
 } from "../../util/newDatos";
+import TituloTabla from "./tituloTabla";
 import { resultadosPorAlumno } from "../../util/funcionesUtiles";
 
 function Grupo(props) {
@@ -51,10 +52,12 @@ function Grupo(props) {
     <div className="container text-center">
       <div className="row mt-2 mb-2">
         <div className="col-9">
-          <h6>
+          {/* <h6>
             Nombre del grupo: {gru.nombreGrupo} - Trimestre: dddd{" "}
             {gru.anioAcademico}
-          </h6>
+            <TituloTabla />
+          </h6> */}
+          <TituloTabla nombreGrupo={""} timestre={""} anio={""} />
         </div>
         <div className="col-3">
           <button type="button" className="btn btn-primary">
