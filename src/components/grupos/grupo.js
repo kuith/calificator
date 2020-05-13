@@ -4,7 +4,8 @@ import {
   realizaGrupo0Trimestre1,
   parcialesGrupo0Trimestre1,
 } from "../../util/newDatos";
-import TituloTabla from "./tituloTabla";
+import TituloTabla from "./componentesTabla/tituloTabla";
+import TablaParciales from "./componentesTabla/tablaParciales";
 import { resultadosPorAlumno } from "../../util/funcionesUtiles";
 
 function Grupo(props) {
@@ -36,28 +37,13 @@ function Grupo(props) {
     <th>{parCab.nombreParcial}</th>
   ));
 
-  const cabeceraTablaAlumnos = (
-    <>
-      <th scope="col"> Nombre </th>
-      <th scope="col"> Apellidos</th>
-      {parcialesCabecera}
-    </>
-  );
-
-  const cabeceraTablaNotaFinal = <td>Nota Final</td>;
-
   ////////////// Fin Cabeceras ///////////////////
 
   return (
     <div className="container text-center">
       <div className="row mt-2 mb-2">
         <div className="col-9">
-          {/* <h6>
-            Nombre del grupo: {gru.nombreGrupo} - Trimestre: dddd{" "}
-            {gru.anioAcademico}
-            <TituloTabla />
-          </h6> */}
-          <TituloTabla nombreGrupo={""} timestre={""} anio={""} />
+          <TituloTabla nombreGrupo={gru.nombreGrupo} anio={gru.anioAcademico} />
         </div>
         <div className="col-3">
           <button type="button" className="btn btn-primary">
@@ -66,17 +52,7 @@ function Grupo(props) {
         </div>
       </div>
       <div className="row">
-        <div className="table-responsive">
-          <table className="table table-striped">
-            <thead>
-              <tr>
-                {cabeceraTablaAlumnos}
-                {cabeceraTablaNotaFinal}
-              </tr>
-            </thead>
-            <tbody>{datosAlumnos}</tbody>
-          </table>
-        </div>
+        <TablaParciales datosAlumnos={datosAlumnos} parciales= {parcialesCabecera}/>
       </div>
     </div>
   );

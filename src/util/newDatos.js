@@ -652,6 +652,7 @@ export const realizaAlumno3Trimestre1 = [
 ];
 
 export const realizaGrupo0Trimestre1 = [
+  //tambien pido el nobre del parcial para la cabecera
   {
     idAlumno: 0,
     nombreAlumno: "Felipe",

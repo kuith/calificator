@@ -49,6 +49,3 @@ export function resultadosPorAlumno(parciales) {
   );
 }
 
-export function parcialesAlumno(alumno) {
-  return alumno.parclaes;
-}
