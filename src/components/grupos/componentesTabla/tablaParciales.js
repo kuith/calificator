@@ -6,7 +6,7 @@ const TablaParciales = (props) => {
   return (
     <div className="table-responsive">
       <table className="table table-striped">
-        <thead>
+        <thead className = "thead-dark">
           <tr>
             <CabeceraAlumnos parciales={props.parciales}/>
             <CabeceraNotaFinal/>
