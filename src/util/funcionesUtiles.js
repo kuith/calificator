@@ -1,3 +1,9 @@
+import {
+  realizaGrupo0Trimestre1,
+  grupos,
+  parcialesGrupo0Trimestre1,
+} from "../util/newDatos";
+
 // Supongo que la salida debería ser algo parecido a esto.
 export function resultadosPorAlumno(parciales) {
   // array "reduce"
@@ -15,9 +21,11 @@ export function resultadosPorAlumno(parciales) {
         nombreAlumno,
         apellidosAlumno,
         idParcial,
+        pesoParcial,
         nombreParcial,
         idTrimestre,
         nota,
+        notaFinal
       } = parcial;
 
       // array "find",
@@ -32,6 +40,7 @@ export function resultadosPorAlumno(parciales) {
           nombreAlumno,
           apellidosAlumno,
           parciales: [],
+          notaFinal
         };
         acc.push(datosAlumno);
       }
@@ -39,6 +48,7 @@ export function resultadosPorAlumno(parciales) {
       datosAlumno.parciales.push({
         idParcial,
         nombreParcial,
+        pesoParcial,
         idTrimestre,
         nota,
       });
@@ -49,3 +59,68 @@ export function resultadosPorAlumno(parciales) {
   );
 }
 
+export function modificarDatosAlumno(idAlumno, nuevoNombre, nuevoApellido) {
+  const queryAlumno = "";
+  
+  console.log("Id del alumno: " + idAlumno +
+    ". El nuevo nombre: " + nuevoNombre +
+    ". El nuevo apellido: " + nuevoApellido);
+  return queryAlumno;
+}
+
+
+export function obtenerGrupos() {
+  const gruposObtenidos = grupos;
+  return gruposObtenidos
+}
+
+export function obtenerDatosParcialesGrupo() {
+  const datosObtenidos = realizaGrupo0Trimestre1;
+  return datosObtenidos;
+}
+
+export function ObtenerParcialesGrupo() {
+  const parcialesGrupo = parcialesGrupo0Trimestre1;
+  return parcialesGrupo
+}
+
+//Funcion que mira el cambio en una celda y si es asi actualiza el estado yb devuelve
+//el mismo
+export function tratarCambio(e, notaInicialCelda, notaFinalCelda, actualizarEstado) {
+  const notaCambio = e.target.innerText;
+  if (notaInicialCelda !== notaFinalCelda) {
+    console.log("Hay cambios. Nueva nota: " + notaFinalCelda);
+    actualizarEstado(notaCambio);
+    return notaCambio;
+  } else {
+    console.log("No hay cambios. Nota inicial=final: " + notaInicialCelda);
+  }
+}
+
+///////Cambiar nota//////////////
+export function cambiarNota(idAlumno, idParcial, nota) {
+  console.log("IdAlumno: " + idAlumno + ". idParcial: " + idParcial + ". Nota nueva: " + nota);
+}
+
+
+
+
+////////calculos notas y mas cosas/////
+
+export function notaPorcentaje(nota, porcentaje) {
+  let notaPacialFinal = 0;
+  notaPacialFinal = Number(((nota * porcentaje) / 100).toFixed(2));
+  return notaPacialFinal;
+}
+//console.log("La nota redondeada a dos es: " + notaPorcentaje(9.6, 60));
+
+export function calcularNotaFinal(notas) {
+  let notaFinal = 0;
+  const reducer = (accumulator, currentValue) => accumulator + currentValue;
+  const sumaNotas = notas.reduce(reducer);
+  notaFinal = Number((sumaNotas/notas.length).toFixed(1));
+  return notaFinal;
+  }
+
+
+//console.log("La nota final es: " + calcularNotaFinal([1, 7, 2, 3.50, 4, 5, 6]));

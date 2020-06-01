@@ -1,45 +1,68 @@
 import React, { useState, useEffect } from "react";
-import {
-  grupos,
-  realizaGrupo0Trimestre1,
-  parcialesGrupo0Trimestre1,
-} from "../../util/newDatos";
+
 import TituloTabla from "./componentesTabla/tituloTabla";
 import TablaParciales from "./componentesTabla/tablaParciales";
 import Boton from "../comunes/boton";
-import { resultadosPorAlumno } from "../../util/funcionesUtiles";
+import {
+  resultadosPorAlumno,
+  obtenerDatosParcialesGrupo,
+  obtenerGrupos,
+  ObtenerParcialesGrupo,
+  cambiarNota
+} from "../../util/funcionesUtiles";
 
 function Grupo(props) {
-  const grupoActual = grupos[props.id - 1];
-  const alumnosActual = realizaGrupo0Trimestre1; ////==> aqui tomaría los datos recibidos??
+  const grupoActual = obtenerGrupos()[props.id - 1];
+  const alumnosActual = obtenerDatosParcialesGrupo(); ////==> aqui tomaría los datos recibidos??
   const alumnosGrupoObtenidos = resultadosPorAlumno(alumnosActual);
 
   const [gru, setGru] = useState(grupoActual);
   const [alumnosGrupo, setAlumnosGrupo] = useState(alumnosGrupoObtenidos);
-  
+  const [notaParcial, setNotaParcial] = useState(0);
+  const [notaInicial, setNotaInicial] = useState(0);
+  const [hayCambio, setHayCambio] = useState(false);
+    
   useEffect(() => {
     setGru(grupoActual);
   }, [grupoActual]);
 
-  
-  //Cada alumno//
+  useEffect(()=> {
+    setAlumnosGrupo(alumnosGrupo)
+  }, [alumnosGrupo]);
+
+  function guardarDatoInicial(e, idAlumno, idParcial) {
+    setNotaInicial(e.target.innerText);
+  }
+
+  function tratarCambio(e, idAlumno, idParcial, nota) {
+    const notaCambio = e.target.innerText;
+    if (notaInicial !== notaCambio) {
+      setNotaParcial(notaCambio);
+      setHayCambio(true);
+      cambiarNota(idAlumno, idParcial, nota);
+    } else {
+      setHayCambio(false);
+    }
+  }
+
   const datosAlumnos = alumnosGrupo.map((alumno) => (
     <tr>
-      <td>{alumno.nombreAlumno}</td>
-      <td>{alumno.apellidosAlumno}</td>
+      <td key={alumno.idAlumno} id={alumno.idAlumno}>{alumno.nombreAlumno}</td>
+      <td key={alumno.apellidosAlumno}>{alumno.apellidosAlumno} </td>
       {alumno.parciales.map((p) => (
-        <td contenteditable="true">{p.nota}</td>
+        <td key={p.idParcial}
+          contentEditable="true"
+          id="nota"
+          onFocus={guardarDatoInicial}
+          //onBlur={tratarCambio}
+          onBlur={tratarCambio(alumno.idAlumno, p.idParcial, p.nota)}
+        >
+          {p.nota}
+        </td>
       ))}
-      <td>0</td>
+      <td>{alumno.notaFinal}</td>
     </tr>
   ));
-  
-
-  //////////////Cabeceras///////////////////////
-  const parcialesCabecera = parcialesGrupo0Trimestre1.map((parCab) => (
-    <th>{parCab.nombreParcial}</th>
-  ));
-  ////////////// Fin Cabeceras ///////////////////
 
   return (
     <div className="container text-center">
@@ -52,7 +75,7 @@ function Grupo(props) {
         </div>
       </div>
       <div className="row">
-        <TablaParciales datosAlumnos={datosAlumnos} parciales= {parcialesCabecera}/>
+        <TablaParciales datosAlumnos={datosAlumnos} parciales={ObtenerParcialesGrupo()}/>
       </div>
     </div>
   );

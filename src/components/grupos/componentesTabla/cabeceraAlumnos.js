@@ -1,11 +1,12 @@
 import React from "react";
+import CabeceraParciales from "./cabeceraParciales";
 
 const CabeceraAlumnos = (props) => {
   return (
     <>
       <th scope="col"> Nombre </th>
       <th scope="col"> Apellidos</th>
-      {props.parciales}
+      <CabeceraParciales parciales = {props.parciales} />
     </>
   );
 };
