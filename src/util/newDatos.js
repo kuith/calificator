@@ -651,7 +651,7 @@ export const realizaAlumno3Trimestre1 = [
   },
 ];
 
-export const realizaGrupo0Trimestre1 = [
+export const realizaGrupo0Trimestre0 = [
   //tambien pido el nobre del parcial para la cabecera
   {
     idAlumno: 0,
@@ -800,4 +800,19 @@ export const parcialesGrupo0Trimestre1 = [
     nombreParcial: "Parcial 3",
     pesoParcial: 60
   },
+];
+
+export const trimestresGrupo0 = [
+  {
+    idTrimestre: 0,
+    nombreTrimestre: "Primer Trimestre",
+  },
+  {
+    idTrimestre: 1,
+    nombreTrimestre: "Segundo Trimestre",
+  },
+  {
+    idTrimestre: 2,
+    nombreTrimestre: "Tercer Trimestre",
+  }
 ];

@@ -1,7 +1,8 @@
 import {
-  realizaGrupo0Trimestre1,
+  realizaGrupo0Trimestre0,
   grupos,
   parcialesGrupo0Trimestre1,
+  trimestresGrupo0
 } from "../util/newDatos";
 
 // Supongo que la salida debería ser algo parecido a esto.
@@ -25,7 +26,7 @@ export function resultadosPorAlumno(parciales) {
         nombreParcial,
         idTrimestre,
         nota,
-        notaFinal
+        notaFinal,
       } = parcial;
 
       // array "find",
@@ -40,7 +41,7 @@ export function resultadosPorAlumno(parciales) {
           nombreAlumno,
           apellidosAlumno,
           parciales: [],
-          notaFinal
+          notaFinal,
         };
         acc.push(datosAlumno);
       }
@@ -61,45 +62,116 @@ export function resultadosPorAlumno(parciales) {
 
 export function modificarDatosAlumno(idAlumno, nuevoNombre, nuevoApellido) {
   const queryAlumno = "";
-  
-  console.log("Id del alumno: " + idAlumno +
-    ". El nuevo nombre: " + nuevoNombre +
-    ". El nuevo apellido: " + nuevoApellido);
+
+  console.log(
+    "Id del alumno: " +
+      idAlumno +
+      ". El nuevo nombre: " +
+      nuevoNombre +
+      ". El nuevo apellido: " +
+      nuevoApellido
+  );
   return queryAlumno;
 }
 
-
+//Obtención de todos los grupos
 export function obtenerGrupos() {
   const gruposObtenidos = grupos;
-  return gruposObtenidos
+  return gruposObtenidos;
 }
 
-export function obtenerDatosParcialesGrupo() {
-  const datosObtenidos = realizaGrupo0Trimestre1;
+//Obtención de los alumnos con sus parciales del grupo seleccionado
+export function obtenerDatosParcialesGrupo(grupo) {
+  const datosObtenidos = realizaGrupo0Trimestre0;
   return datosObtenidos;
 }
 
-export function ObtenerParcialesGrupo() {
+//Obtención de los alumnos parciales del grupo seleecionado
+export function ObtenerParcialesGrupo(grupo) {
   const parcialesGrupo = parcialesGrupo0Trimestre1;
-  return parcialesGrupo
+  return parcialesGrupo;
 }
 
-//Funcion que mira el cambio en una celda y si es asi actualiza el estado yb devuelve
-//el mismo
-export function tratarCambio(e, notaInicialCelda, notaFinalCelda, actualizarEstado) {
-  const notaCambio = e.target.innerText;
-  if (notaInicialCelda !== notaFinalCelda) {
-    console.log("Hay cambios. Nueva nota: " + notaFinalCelda);
-    actualizarEstado(notaCambio);
-    return notaCambio;
+//función que recoge el trimestre activo
+export function recibirTrimestreActivo(trimestre) {
+  const trimestreActivo = trimestre;
+  //console.log("El nuevo trimestre activo es: " + trimestreActivo);
+  return trimestreActivo;
+}
+
+//Obtener parciales del grupo y trimestre seleccionado
+export function obtenerParcialesGrupoTrimestre(grupo, trimestre) {
+  const parcialesGrupoTrimestre = parcialesGrupo0Trimestre1;
+  return parcialesGrupoTrimestre;
+}
+
+//Funcion que mira hay cambio en una celda y si es asi actualiza se lo pasa a la que actualiza
+export function ComprobarCambio(
+  notaInicial,
+  notaCambio,
+  idAlumno,
+  nombreAlumno,
+  apellidosAlumno,
+  idParcial,
+  nombreParcial,
+  pesoParcial,
+  idTrimestre
+) {
+  if (notaInicial !== notaCambio) {
+    actualizarNota(
+      notaCambio,
+      idAlumno,
+      nombreAlumno,
+      apellidosAlumno,
+      idParcial,
+      nombreParcial,
+      pesoParcial,
+      idTrimestre
+    );
+    console.log(
+      "Hay cambio. Nota final: " +
+        notaCambio +
+        ". Id Alumno: " +
+        idAlumno +
+        ". Nombre Alumno: " +
+        nombreAlumno +
+        ". Apellidos Alumno: " +
+        apellidosAlumno +
+        ". Id Parcial: " +
+        idParcial +
+        " . nombre Parcial: " +
+        nombreParcial +
+        ". peso Parcial: " +
+        +pesoParcial +
+        ". Id Trimestre: " +
+        idTrimestre
+    );
   } else {
-    console.log("No hay cambios. Nota inicial=final: " + notaInicialCelda);
+    console.log(
+      "No hay cambio. Nota inicial == nota final. No se hace nada" +
+        notaInicial +
+        ". Nota Cambio: " +
+        notaCambio
+    );
   }
 }
+//actualiza una nota
+export function actualizarNota(
+  notaCambio,
+  idAlumno,
+  nombreAlumno,
+  apellidosAlumno,
+  idParcial,
+  nombreParcial,
+  pesoParcial,
+  idTrimestre
+) {
+  console.log("Hola voy a actualizar una nota");
+}
 
-///////Cambiar nota//////////////
-export function cambiarNota(idAlumno, idParcial, nota) {
-  console.log("IdAlumno: " + idAlumno + ". idParcial: " + idParcial + ". Nota nueva: " + nota);
+export function obtenerTrimestre(grupo) {
+  const trimestresObtenidos = trimestresGrupo0;
+  return trimestresObtenidos;
 }
 
 
@@ -114,13 +186,4 @@ export function notaPorcentaje(nota, porcentaje) {
 }
 //console.log("La nota redondeada a dos es: " + notaPorcentaje(9.6, 60));
 
-export function calcularNotaFinal(notas) {
-  let notaFinal = 0;
-  const reducer = (accumulator, currentValue) => accumulator + currentValue;
-  const sumaNotas = notas.reduce(reducer);
-  notaFinal = Number((sumaNotas/notas.length).toFixed(1));
-  return notaFinal;
-  }
 
-
-//console.log("La nota final es: " + calcularNotaFinal([1, 7, 2, 3.50, 4, 5, 6]));
