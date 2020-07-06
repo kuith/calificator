@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 import ListaTrimestres from './trimestres/listaTrimestres';
-
 import TituloTabla from "./componentesTabla/tituloTabla";
 import TablaParciales from "./componentesTabla/tablaParciales";
-import Boton from "../comunes/boton";
+import BotonLink from "../comunes/botonLink";
 import {
   resultadosPorAlumno,
   obtenerDatosParcialesGrupo,
@@ -16,13 +14,13 @@ import {
 
 function Grupo(props) {
   const grupoActual = obtenerGrupos()[props.id - 1];
-  const alumnosActual = obtenerDatosParcialesGrupo(); ////==> aqui tomaría los datos recibidos??
+  const alumnosActual = obtenerDatosParcialesGrupo();
   const alumnosGrupoObtenidos = resultadosPorAlumno(alumnosActual);
 
   const [gru, setGru] = useState(grupoActual);
   const [alumnosGrupo, setAlumnosGrupo] = useState(alumnosGrupoObtenidos);
   const [notaInicial, setNotaInicial] = useState(0);
-  const [trimestre, setTrimestre] = useState(0);
+  const [trimestre] = useState(0);
 
   useEffect(() => {
     setGru(grupoActual);
@@ -79,17 +77,29 @@ function Grupo(props) {
           <TituloTabla nombreGrupo={gru.nombreGrupo} anio={gru.anioAcademico} />
         </div>
         <div className="col-3">
-          <button class="btn btn-info">
-            <Link to="./parciales/nuevoParcial">
-              Nuevo Parcial
-            </Link>
-          </button>
+          <BotonLink
+            etiqueta="Nuevo Parcial"
+            ruta="./parciales/nuevoParcial"
+            anio={gru.anioAcademico}
+            grupo={gru.idGrupo}
+            curso={gru.curso}
+            trimestre={trimestre}/>
         </div>
       </div>
       <div className="row">
         <TablaParciales
           datosAlumnos={datosAlumnos}
           parciales={obtenerParcialesGrupoTrimestre(gru.idGrupo, 1)}
+        />
+      </div>
+      <div className="row">
+        <BotonLink
+          etiqueta="Nuevo alumno"
+          ruta="./alumnos/nuevoAlumno"
+          anio={gru.anioAcademico}
+          grupo={gru.idGrupo}
+          curso={gru.curso}
+          trimestre={trimestre}
         />
       </div>
     </div>

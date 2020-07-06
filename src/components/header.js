@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-//import { planes } from "../util/datos";
-import { grupos } from "../util/newDatos";
 import { Link } from "react-router-dom";
+import { obtenerGrupos } from "../util/funcionesUtiles";
 
 const Header = () => {
-  
-  const [gruposData, setGruposData] = useState(grupos);
+  const gruposObtenidos = obtenerGrupos();
+  const [gruposData] = useState(gruposObtenidos);
   
   const gru = gruposData.map(grupo => (
     <Link

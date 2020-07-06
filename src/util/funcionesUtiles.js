@@ -99,6 +99,12 @@ export function recibirTrimestreActivo(trimestre) {
   return trimestreActivo;
 }
 
+//función que obtiene todos los trimestres de un grupo
+export function obtenerTrimestre(grupo) {
+  const trimestresObtenidos = trimestresGrupo0;
+  return trimestresObtenidos;
+}
+
 //Obtener parciales del grupo y trimestre seleccionado
 export function obtenerParcialesGrupoTrimestre(grupo, trimestre) {
   const parcialesGrupoTrimestre = parcialesGrupo0Trimestre1;
@@ -169,10 +175,7 @@ export function actualizarNota(
   console.log("Hola voy a actualizar una nota");
 }
 
-export function obtenerTrimestre(grupo) {
-  const trimestresObtenidos = trimestresGrupo0;
-  return trimestresObtenidos;
-}
+
 
 
 
