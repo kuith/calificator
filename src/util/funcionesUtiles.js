@@ -2,7 +2,7 @@ import {
   realizaGrupo0Trimestre0,
   grupos,
   parcialesGrupo0Trimestre1,
-  trimestresGrupo0
+  trimestresGrupo0,
 } from "../util/newDatos";
 
 // Supongo que la salida debería ser algo parecido a esto.
@@ -80,13 +80,13 @@ export function obtenerGrupos() {
   return gruposObtenidos;
 }
 
-//Obtención de los alumnos con sus parciales del grupo seleccionado
+//Obtención de los alumnos junto con sus sus parciales del grupo seleccionado. Sería la tabla realiza filtrada por grupo
 export function obtenerDatosParcialesGrupo(grupo) {
   const datosObtenidos = realizaGrupo0Trimestre0;
   return datosObtenidos;
 }
 
-//Obtención de los alumnos parciales del grupo seleecionado
+//Obtención de los parciales del grupo seleecionado
 export function ObtenerParcialesGrupo(grupo) {
   const parcialesGrupo = parcialesGrupo0Trimestre1;
   return parcialesGrupo;
@@ -175,11 +175,6 @@ export function actualizarNota(
   console.log("Hola voy a actualizar una nota");
 }
 
-
-
-
-
-
 ////////calculos notas y mas cosas/////
 
 export function notaPorcentaje(nota, porcentaje) {
@@ -188,5 +183,3 @@ export function notaPorcentaje(nota, porcentaje) {
   return notaPacialFinal;
 }
 //console.log("La nota redondeada a dos es: " + notaPorcentaje(9.6, 60));
-
-
